@@ -1,0 +1,124 @@
+*{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.divHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divHeader_blocks{
+    margin: 10px 10px;
+    padding: 10px 20px;
+    color: black;
+}
+
+.divHeader_blocksAnother{
+    margin: 10px 10px;
+    padding: 10px 20px;
+    color: white;
+}
+
+.divHeader_blocks:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.divHeader_blocksAnother:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.sectionMain{
+    margin-top: 100px;
+}
+
+.sectionBlock_message{
+    background-color: #00adff;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+}
+
+.sectionBlock_Name{
+    font-size: 60px;
+    color: black;
+}
+
+.sectionBlock_Name_Another{
+    font-size: 60px;
+    color: white;
+}
+
+.sectionBlock_Dev{
+    color: gray;
+}
+
+.sectionBlock_Links{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.sectionBlock_Links_Link{
+    margin-right: 20px;
+}
+
+.sectionBlock_Links_Link a{
+    text-decoration: none;
+    color: white;
+    background-color: #00adff;
+    padding: 10px 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+
+.sectionBlock_Links_Link a:hover{
+    background-color: blue;
+}
+
+.sectionMain_Block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 100px;
+}
+
+.sectionImg_Photo{
+    width: 400px;
+    border-radius: 15%;
+}
+
+.DevReact{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: gray;
+}
+
+.Switcher{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #00adff;
+    height: 35px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.Switcher:hover{
+    background-color: blue;
+    cursor: pointer;
+}
