@@ -100,14 +100,14 @@
 }
 
 .DevReact{
-    position: absolute;
+    position: fixed;
     bottom: 10px;
     left: 10px;
     color: gray;
 }
 
 .Switcher{
-    position: absolute;
+    position: fixed;
     bottom: 10px;
     right: 10px;
     background-color: #00adff;
