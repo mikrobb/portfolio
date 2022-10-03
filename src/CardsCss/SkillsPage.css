@@ -4,4 +4,61 @@ margin-top: 50px;
 .titleSkills{
     text-align: center;
     font-size: 50px;
+    color: black;
+}
+
+.titleSkills_Another{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.skillsBlock{
+    margin: 20px 20px;
+}
+
+.skillLeftBlock{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.skillRightBlock{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pngSkillLeft{
+    border-radius: 30px;
+    margin-right: 25px;
+    width: 500px;
+    height: 280px;
+    
+}
+
+.pngSkillRight{
+    border-radius: 30px;
+    margin-left: 25px;
+    width: 500px;
+    height: 280px;
+}
+
+.infoSkill{
+    color: black;
+    font-size: 20px;
+}
+
+.infoSkill_Another{
+    color: white;
+    font-size: 20px;
+}
+
+.infoSkill a {
+    text-decoration: none;
+}
+.infoSkill_Another a {
+    text-decoration: none;
 }
