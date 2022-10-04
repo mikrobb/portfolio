@@ -1,0 +1,38 @@
+.aboutBlockMain{
+    display: flex;
+    align-items: center;
+    margin:20px 20px;
+}
+
+.imgAbout{
+    width: 400px;
+    border-radius: 15%;
+    margin-right: 20px;
+}
+
+.aboutBlockInfo{
+    color: black;
+    font-size: 20px;
+}
+.aboutBlockInfo_Another{
+    color: white;
+    font-size: 20px;
+}
+
+.resumeButton{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.resumeButton a {
+    background-color:  #00adff;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.resumeButton a:hover{
+    cursor: pointer;
+    background-color: blue;
+}

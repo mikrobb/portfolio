@@ -1,7 +1,8 @@
 import React from "react";
 import "../CardsCss/MainHomePage.css";
 import img from "../img/myPhoto.jpg";
-import { Link } from "react-router-dom";
+import Header from "../HtmlCards/Header";
+import Footer from "../HtmlCards/Footer";
 
 export default function HomePage({
   getFromLocalStorage,
@@ -11,58 +12,7 @@ export default function HomePage({
 }) {
   return (
     <>
-      <header className="header">
-        <div className="divHeader">
-          <div>
-            <Link
-              className={
-                getFromLocalStorage("theme").includes("light")
-                  ? "divHeader_blocks"
-                  : "divHeader_blocksAnother"
-              }
-              to="/"
-            >
-              Home
-            </Link>
-          </div>
-          <div>
-            <Link
-              className={
-                getFromLocalStorage("theme").includes("light")
-                  ? "divHeader_blocks"
-                  : "divHeader_blocksAnother"
-              }
-              to="skillPage"
-            >
-              Skills
-            </Link>
-          </div>
-          <div>
-            <Link
-              className={
-                getFromLocalStorage("theme").includes("light")
-                  ? "divHeader_blocks"
-                  : "divHeader_blocksAnother"
-              }
-              to="aboutPage"
-            >
-              About
-            </Link>
-          </div>
-          <div>
-            <Link
-              className={
-                getFromLocalStorage("theme").includes("light")
-                  ? "divHeader_blocks"
-                  : "divHeader_blocksAnother"
-              }
-              to="contactPage"
-            >
-              Contact
-            </Link>
-          </div>
-        </div>
-      </header>
+      <Header getFromLocalStorage={getFromLocalStorage} />
       <section className="sectionMain">
         <div className="sectionMain_Block">
           <div className="sectionBlock">
@@ -99,19 +49,12 @@ export default function HomePage({
           </div>
         </div>
       </section>
-      <footer>
-        <div>
-          <div className="DevReact">@Developed in react</div>
-          <div
-            className="Switcher"
-            onClick={theme.includes("light") ? switcherBlack : switcherLight}
-          >
-            {getFromLocalStorage("theme").includes("light")
-              ? "Dark Theme"
-              : "Light Theme"}
-          </div>
-        </div>
-      </footer>
+      <Footer
+        getFromLocalStorage={getFromLocalStorage}
+        theme={theme}
+        switcherBlack={switcherBlack}
+        switcherLight={switcherLight}
+      />
     </>
   );
 }
