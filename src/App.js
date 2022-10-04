@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Cards/MainHomePage";
 import SkillsPage from "./Cards/SkillsPage";
 import { useState } from "react";
+import AboutPage from "./Cards/AboutPage";
+import ContactPage from "./Cards/ContactPage";
 
 function setToLocalStorage(key, value) {
   return localStorage.setItem(key, JSON.stringify(value));
@@ -10,6 +12,10 @@ function setToLocalStorage(key, value) {
 
 function getFromLocalStorage(key) {
   return JSON.parse(localStorage.getItem(key));
+}
+
+if (!getFromLocalStorage("theme")) {
+  setToLocalStorage("theme", "light");
 }
 
 function App() {
@@ -56,6 +62,32 @@ function App() {
             path="/skillPage"
             element={
               <SkillsPage
+                setToLocalStorage={setToLocalStorage}
+                getFromLocalStorage={getFromLocalStorage}
+                theme={theme}
+                setTheme={setTheme}
+                switcherBlack={switcherBlack}
+                switcherLight={switcherLight}
+              />
+            }
+          />
+          <Route
+            path="/aboutPage"
+            element={
+              <AboutPage
+                setToLocalStorage={setToLocalStorage}
+                getFromLocalStorage={getFromLocalStorage}
+                theme={theme}
+                setTheme={setTheme}
+                switcherBlack={switcherBlack}
+                switcherLight={switcherLight}
+              />
+            }
+          />
+          <Route
+            path="/contactPage"
+            element={
+              <ContactPage
                 setToLocalStorage={setToLocalStorage}
                 getFromLocalStorage={getFromLocalStorage}
                 theme={theme}

@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Footer from "../HtmlCards/Footer";
+import Header from "../HtmlCards/Header";
 import "../CardsCss/SkillsPage.css";
 import html from "../img/html.png";
 import css from "../img/css.png";
@@ -16,57 +17,7 @@ export default function SkillsPage({
 }) {
   return (
     <>
-      <header>
-        <div className="divHeader">
-          <div>
-            <Link
-              className={
-                getFromLocalStorage("theme").includes("light")
-                  ? "divHeader_blocks"
-                  : "divHeader_blocksAnother"
-              }
-              to="/"
-            >
-              Home
-            </Link>
-          </div>
-          <div>
-            <Link
-              className={
-                getFromLocalStorage("theme").includes("light")
-                  ? "divHeader_blocks"
-                  : "divHeader_blocksAnother"
-              }
-            >
-              Skills
-            </Link>
-          </div>
-          <div>
-            <Link
-              className={
-                getFromLocalStorage("theme").includes("light")
-                  ? "divHeader_blocks"
-                  : "divHeader_blocksAnother"
-              }
-              to="aboutPage"
-            >
-              About
-            </Link>
-          </div>
-          <div>
-            <Link
-              className={
-                getFromLocalStorage("theme").includes("light")
-                  ? "divHeader_blocks"
-                  : "divHeader_blocksAnother"
-              }
-              to="contactPage"
-            >
-              Contact
-            </Link>
-          </div>
-        </div>
-      </header>
+      <Header getFromLocalStorage={getFromLocalStorage} />
       <section className="skillsSection">
         <h1
           className={
@@ -179,19 +130,12 @@ export default function SkillsPage({
           </div>
         </div>
       </section>
-      <footer>
-        <div>
-          <div className="DevReact">@Developed in react</div>
-          <div
-            className="Switcher"
-            onClick={theme.includes("light") ? switcherBlack : switcherLight}
-          >
-            {getFromLocalStorage("theme").includes("light")
-              ? "Dark Theme"
-              : "Light Theme"}
-          </div>
-        </div>
-      </footer>
+      <Footer
+        getFromLocalStorage={getFromLocalStorage}
+        theme={theme}
+        switcherBlack={switcherBlack}
+        switcherLight={switcherLight}
+      />
     </>
   );
 }
