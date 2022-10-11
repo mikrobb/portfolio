@@ -62,3 +62,66 @@ margin-top: 50px;
 .infoSkill_Another a {
     text-decoration: none;
 }
+
+
+
+@media screen and (max-width:800px){
+    .pngSkillLeft{
+        border-radius: 30px;
+        margin-right: 25px;
+        width: 300px;
+        height: 150px;
+        
+    }
+    
+    .pngSkillRight{
+        border-radius: 30px;
+        margin-left: 25px;
+        width: 300px;
+        height: 150px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .pngSkillLeft{
+        border-radius: 30px;
+        margin-right: 25px;
+        width: 200px;
+        height: 100px;
+        
+    }
+    
+    .pngSkillRight{
+        border-radius: 30px;
+        margin-left: 25px;
+        width: 200px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .pngSkillLeft{
+        border-radius: 30px;
+        margin-right: 25px;
+        width: 200px;
+        height: 100px;
+        
+    }
+    
+    .pngSkillRight{
+        border-radius: 30px;
+        margin-left: 25px;
+        width: 200px;
+        height: 100px;
+    }
+    .infoSkill{
+        color: black;
+        font-size: 12px;
+    }
+    
+    .infoSkill_Another{
+        color: white;
+        font-size: 12px;
+    }
+}

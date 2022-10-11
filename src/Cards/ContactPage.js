@@ -13,7 +13,25 @@ export default function ContactPage({
     <>
       <Header getFromLocalStorage={getFromLocalStorage} />
       <section>
-        <h1
+        <h2
+          className={
+            getFromLocalStorage("theme").includes("light")
+              ? "titleSkills"
+              : "titleSkills_Another"
+          }
+        >
+          Call me
+        </h2>
+        <h2
+          className={
+            getFromLocalStorage("theme").includes("light")
+              ? "titleSkills"
+              : "titleSkills_Another"
+          }
+        >
+          +380960335205
+        </h2>
+        <h2
           className={
             getFromLocalStorage("theme").includes("light")
               ? "titleSkills"
@@ -21,7 +39,7 @@ export default function ContactPage({
           }
         >
           Contact Me
-        </h1>
+        </h2>
         <form
           action="https://app.form2chat.io/f/17133913"
           id="contact-form"

@@ -36,3 +36,36 @@
     cursor: pointer;
     background-color: blue;
 }
+
+
+
+@media screen and (max-width:900px){
+    .aboutBlockMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:20px 20px;
+    }
+    .aboutImgBlock{
+        margin-bottom: 50px;
+    }
+}
+
+
+@media screen and (max-width:375px){
+    .aboutBlockMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:20px 20px;
+    }
+    .aboutImgBlock{
+        margin-bottom: 50px;
+    }
+
+    .imgAbout{
+        width: 300px;
+        border-radius: 15%;
+        margin-right: 20px;
+    }
+}
