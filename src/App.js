@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import HomePage from "./Cards/MainHomePage";
 import SkillsPage from "./Cards/SkillsPage";
 import { useState } from "react";
@@ -42,7 +43,7 @@ function App() {
   }
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route
             exact
@@ -98,7 +99,7 @@ function App() {
             }
           />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
