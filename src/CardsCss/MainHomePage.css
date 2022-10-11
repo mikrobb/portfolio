@@ -126,3 +126,87 @@
     background-color: blue;
     cursor: pointer;
 }
+
+@media screen and (max-width:1000px){
+    .sectionMain_Block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 100px;
+    }
+
+    .sectionImg_Photo{
+        width: 400px;
+        border-radius: 15%;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .sectionMain_Block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 100px;
+    }
+
+    .sectionImg_Photo{
+        width: 300px;
+        border-radius: 15%;
+        margin-top: 100px;
+    }
+    .sectionBlock_message{
+        background-color: #00adff;
+        width: 70px;
+        height: 20px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        color: white;
+    }
+    
+    .sectionBlock_Name{
+        font-size: 30px;
+        color: black;
+    }
+    
+    .sectionBlock_Name_Another{
+        font-size: 30px;
+        color: white;
+    }
+    
+    .sectionBlock_Dev{
+        color: gray;
+    }
+    
+    .sectionBlock_Links{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 12px;
+        
+    }
+    
+    .sectionBlock_Links_Link{
+        margin-right: 20px;
+    }
+    
+    .sectionBlock_Links_Link a{
+        text-decoration: none;
+        color: white;
+        background-color: #00adff;
+        padding: 10px 10px;
+        border-radius: 25px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
+    }
+    
+    .sectionBlock_Links_Link a:hover{
+        background-color: rgb(86, 86, 132);
+    }
+}

@@ -24,7 +24,7 @@ export default function AboutPage({
           About
         </h1>
         <div className="aboutBlockMain">
-          <div>
+          <div className="aboutImgBlock">
             <img className="imgAbout" src={img} alt="" />
           </div>
           <div>
